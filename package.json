@@ -29,7 +29,6 @@
     "prettier-fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'"
-  
   },
   "eslintConfig": {
     "extends": [
@@ -64,7 +63,11 @@
     "@storybook/react": "^8.1.9",
     "@storybook/react-webpack5": "^8.1.9",
     "@storybook/test": "^8.1.9",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "eslint-plugin-react": "^7.34.4",
     "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-testing-library": "^6.2.2",
     "husky": "^9.0.11",
     "prop-types": "^15.8.1",
     "storybook": "^8.1.9",
