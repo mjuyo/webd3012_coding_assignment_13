@@ -27,7 +27,8 @@
     "build-storybook": "storybook build",
     "prettier-check": "prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
     "prettier-fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'"
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'"
   
   },
   "eslintConfig": {

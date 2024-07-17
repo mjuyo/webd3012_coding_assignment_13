@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import Label from './Label';
 import { LabelProps } from './Label.types';

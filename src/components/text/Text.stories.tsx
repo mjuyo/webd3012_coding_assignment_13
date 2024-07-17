@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import TextElement from './Text';
 import { TextProps } from './Text.types';

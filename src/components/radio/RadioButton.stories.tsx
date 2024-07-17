@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import RadioButton from './RadioButton';
 import { RadioButtonProps } from './RadioButton.types';
