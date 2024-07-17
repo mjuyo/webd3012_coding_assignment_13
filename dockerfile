@@ -1,27 +1,20 @@
-# Base image
-FROM node:18 AS build
+# Use an official Node runtime as a parent image
+FROM node:14
 
 # Set the working directory
-WORKDIR /juyo_marco_ui_garden
+WORKDIR /juyo_marco_ui_garden_build_checks
 
-# Add `/app/node_modules/.bin` to $PATH
-ENV PATH /juyo_marco_ui_garden/node_modules/.bin:$PATH
-
-# Copy package.json and package-lock.json
-COPY package*.json ./
-
-# Install dependencies
-RUN npm install --silent
-
-# Copy the source code
+# Copy the current directory contents into the container
 COPY . .
 
-# Set the environment variable to serve the built files
-ENV HOST=0.0.0.0
-ENV PORT=8083
+# Install dependencies
+RUN npm install
 
-# Expose the desired port
-EXPOSE 8083
+# Build the app for production
+RUN npm run build
 
-# Start the development server
-CMD ["npm", "run", "storybook"]
+# Make port 8018 available to the world outside this container
+EXPOSE 8018
+
+# Run the app
+CMD [ "npx", "serve", "-s", "build", "-l", "8018" ]
