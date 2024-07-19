@@ -31,6 +31,6 @@ jobs:
       run: npm test
 
       # Add a deliberate failure step
-    - name: Deliberate failure step
-      run: exit 1
-      if: always()
+    # - name: Deliberate failure step
+    #   run: exit 1
+    #   if: always()
