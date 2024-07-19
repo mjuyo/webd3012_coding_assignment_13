@@ -30,6 +30,11 @@
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier-check && npm run lint && npm test"
+    }
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
