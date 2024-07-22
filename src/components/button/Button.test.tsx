@@ -9,7 +9,7 @@ test('renders button', () => {
 
 test('button is disabled', () => {
   render(<Button label="Click me" disabled />);
-  const button = screen.getByText('Click me');
+  const button = screen.getByText('Click');
   expect(button).toBeDisabled();
   expect(button).toHaveStyle('background-color: #ccc');
 });
